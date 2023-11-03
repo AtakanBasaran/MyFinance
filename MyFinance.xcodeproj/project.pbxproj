@@ -9,21 +9,52 @@
 /* Begin PBXBuildFile section */
 		BBDA59CC2AF11FA200249807 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA59CB2AF11FA200249807 /* AppDelegate.swift */; };
 		BBDA59CE2AF11FA200249807 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA59CD2AF11FA200249807 /* SceneDelegate.swift */; };
-		BBDA59D02AF11FA200249807 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA59CF2AF11FA200249807 /* ViewController.swift */; };
 		BBDA59D32AF11FA200249807 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBDA59D12AF11FA200249807 /* Main.storyboard */; };
 		BBDA59D52AF11FA500249807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBDA59D42AF11FA500249807 /* Assets.xcassets */; };
 		BBDA59D82AF11FA500249807 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBDA59D62AF11FA500249807 /* LaunchScreen.storyboard */; };
+		BBDA59E42AF1202700249807 /* WebServiceCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA59E32AF1202700249807 /* WebServiceCurrency.swift */; };
+		BBDA59E62AF1204900249807 /* Finance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA59E52AF1204900249807 /* Finance.swift */; };
+		BBDA59E82AF1206F00249807 /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA59E72AF1206F00249807 /* CurrencyViewModel.swift */; };
+		BBDA59EB2AF120AC00249807 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = BBDA59EA2AF120AC00249807 /* RxBlocking */; };
+		BBDA59ED2AF120AC00249807 /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = BBDA59EC2AF120AC00249807 /* RxBlocking-Dynamic */; };
+		BBDA59EF2AF120AC00249807 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BBDA59EE2AF120AC00249807 /* RxCocoa */; };
+		BBDA59F12AF120AC00249807 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = BBDA59F02AF120AC00249807 /* RxCocoa-Dynamic */; };
+		BBDA59F32AF120AC00249807 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = BBDA59F22AF120AC00249807 /* RxRelay */; };
+		BBE03D7B2AF1230000853A50 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE03D7A2AF1230000853A50 /* NewsViewController.swift */; };
+		BBE03D7D2AF1231400853A50 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE03D7C2AF1231400853A50 /* CurrencyViewController.swift */; };
+		BBE03D7F2AF1232500853A50 /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE03D7E2AF1232500853A50 /* CryptoViewController.swift */; };
+		BBE03D812AF1233B00853A50 /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE03D802AF1233B00853A50 /* MarketViewController.swift */; };
+		BBE03D852AF1B83800853A50 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE03D842AF1B83800853A50 /* CurrencyTableViewCell.swift */; };
+		BBE03D872AF4130600853A50 /* WebServiceCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE03D862AF4130600853A50 /* WebServiceCrypto.swift */; };
+		BBE03D892AF4159600853A50 /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE03D882AF4159600853A50 /* CryptoViewModel.swift */; };
+		BBE03D8B2AF424D700853A50 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE03D8A2AF424D700853A50 /* CryptoTableViewCell.swift */; };
+		BBE03D8D2AF52CC700853A50 /* WebServiceMarket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE03D8C2AF52CC600853A50 /* WebServiceMarket.swift */; };
+		BBE03D8F2AF538C200853A50 /* MarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE03D8E2AF538C200853A50 /* MarketViewModel.swift */; };
+		BBE03D912AF5417700853A50 /* MarketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE03D902AF5417700853A50 /* MarketTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BBDA59C82AF11FA200249807 /* MyFinance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFinance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBDA59CB2AF11FA200249807 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBDA59CD2AF11FA200249807 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BBDA59CF2AF11FA200249807 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BBDA59D22AF11FA200249807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BBDA59D42AF11FA500249807 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBDA59D72AF11FA500249807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBDA59D92AF11FA500249807 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBDA59E32AF1202700249807 /* WebServiceCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceCurrency.swift; sourceTree = "<group>"; };
+		BBDA59E52AF1204900249807 /* Finance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finance.swift; sourceTree = "<group>"; };
+		BBDA59E72AF1206F00249807 /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
+		BBE03D7A2AF1230000853A50 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		BBE03D7C2AF1231400853A50 /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
+		BBE03D7E2AF1232500853A50 /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
+		BBE03D802AF1233B00853A50 /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
+		BBE03D842AF1B83800853A50 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		BBE03D862AF4130600853A50 /* WebServiceCrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceCrypto.swift; sourceTree = "<group>"; };
+		BBE03D882AF4159600853A50 /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
+		BBE03D8A2AF424D700853A50 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		BBE03D8C2AF52CC600853A50 /* WebServiceMarket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceMarket.swift; sourceTree = "<group>"; };
+		BBE03D8E2AF538C200853A50 /* MarketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewModel.swift; sourceTree = "<group>"; };
+		BBE03D902AF5417700853A50 /* MarketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +62,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBDA59F32AF120AC00249807 /* RxRelay in Frameworks */,
+				BBDA59F12AF120AC00249807 /* RxCocoa-Dynamic in Frameworks */,
+				BBDA59EF2AF120AC00249807 /* RxCocoa in Frameworks */,
+				BBDA59EB2AF120AC00249807 /* RxBlocking in Frameworks */,
+				BBDA59ED2AF120AC00249807 /* RxBlocking-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +94,58 @@
 			children = (
 				BBDA59CB2AF11FA200249807 /* AppDelegate.swift */,
 				BBDA59CD2AF11FA200249807 /* SceneDelegate.swift */,
-				BBDA59CF2AF11FA200249807 /* ViewController.swift */,
+				BBDA59E22AF1200B00249807 /* Service */,
+				BBDA59E12AF11FFC00249807 /* Model */,
+				BBDA59E02AF11FD600249807 /* ViewModel */,
+				BBDA59DF2AF11FB800249807 /* View */,
 				BBDA59D12AF11FA200249807 /* Main.storyboard */,
 				BBDA59D42AF11FA500249807 /* Assets.xcassets */,
 				BBDA59D62AF11FA500249807 /* LaunchScreen.storyboard */,
 				BBDA59D92AF11FA500249807 /* Info.plist */,
 			);
 			path = MyFinance;
+			sourceTree = "<group>";
+		};
+		BBDA59DF2AF11FB800249807 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BBE03D7A2AF1230000853A50 /* NewsViewController.swift */,
+				BBE03D7C2AF1231400853A50 /* CurrencyViewController.swift */,
+				BBE03D842AF1B83800853A50 /* CurrencyTableViewCell.swift */,
+				BBE03D7E2AF1232500853A50 /* CryptoViewController.swift */,
+				BBE03D8A2AF424D700853A50 /* CryptoTableViewCell.swift */,
+				BBE03D802AF1233B00853A50 /* MarketViewController.swift */,
+				BBE03D902AF5417700853A50 /* MarketTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BBDA59E02AF11FD600249807 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BBDA59E72AF1206F00249807 /* CurrencyViewModel.swift */,
+				BBE03D882AF4159600853A50 /* CryptoViewModel.swift */,
+				BBE03D8E2AF538C200853A50 /* MarketViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BBDA59E12AF11FFC00249807 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BBDA59E52AF1204900249807 /* Finance.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BBDA59E22AF1200B00249807 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BBDA59E32AF1202700249807 /* WebServiceCurrency.swift */,
+				BBE03D862AF4130600853A50 /* WebServiceCrypto.swift */,
+				BBE03D8C2AF52CC600853A50 /* WebServiceMarket.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +164,13 @@
 			dependencies = (
 			);
 			name = MyFinance;
+			packageProductDependencies = (
+				BBDA59EA2AF120AC00249807 /* RxBlocking */,
+				BBDA59EC2AF120AC00249807 /* RxBlocking-Dynamic */,
+				BBDA59EE2AF120AC00249807 /* RxCocoa */,
+				BBDA59F02AF120AC00249807 /* RxCocoa-Dynamic */,
+				BBDA59F22AF120AC00249807 /* RxRelay */,
+			);
 			productName = MyFinance;
 			productReference = BBDA59C82AF11FA200249807 /* MyFinance.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +199,9 @@
 				Base,
 			);
 			mainGroup = BBDA59BF2AF11FA200249807;
+			packageReferences = (
+				BBDA59E92AF120AC00249807 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = BBDA59C92AF11FA200249807 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +229,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBDA59D02AF11FA200249807 /* ViewController.swift in Sources */,
+				BBE03D7D2AF1231400853A50 /* CurrencyViewController.swift in Sources */,
+				BBE03D812AF1233B00853A50 /* MarketViewController.swift in Sources */,
+				BBDA59E82AF1206F00249807 /* CurrencyViewModel.swift in Sources */,
+				BBE03D7F2AF1232500853A50 /* CryptoViewController.swift in Sources */,
+				BBE03D8B2AF424D700853A50 /* CryptoTableViewCell.swift in Sources */,
 				BBDA59CC2AF11FA200249807 /* AppDelegate.swift in Sources */,
+				BBE03D8D2AF52CC700853A50 /* WebServiceMarket.swift in Sources */,
+				BBE03D892AF4159600853A50 /* CryptoViewModel.swift in Sources */,
+				BBDA59E62AF1204900249807 /* Finance.swift in Sources */,
+				BBE03D7B2AF1230000853A50 /* NewsViewController.swift in Sources */,
+				BBDA59E42AF1202700249807 /* WebServiceCurrency.swift in Sources */,
+				BBE03D912AF5417700853A50 /* MarketTableViewCell.swift in Sources */,
+				BBE03D8F2AF538C200853A50 /* MarketViewModel.swift in Sources */,
+				BBE03D852AF1B83800853A50 /* CurrencyTableViewCell.swift in Sources */,
 				BBDA59CE2AF11FA200249807 /* SceneDelegate.swift in Sources */,
+				BBE03D872AF4130600853A50 /* WebServiceCrypto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +404,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +433,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,6 +469,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BBDA59E92AF120AC00249807 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BBDA59EA2AF120AC00249807 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBDA59E92AF120AC00249807 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		BBDA59EC2AF120AC00249807 /* RxBlocking-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBDA59E92AF120AC00249807 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxBlocking-Dynamic";
+		};
+		BBDA59EE2AF120AC00249807 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBDA59E92AF120AC00249807 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		BBDA59F02AF120AC00249807 /* RxCocoa-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBDA59E92AF120AC00249807 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxCocoa-Dynamic";
+		};
+		BBDA59F22AF120AC00249807 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBDA59E92AF120AC00249807 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BBDA59C02AF11FA200249807 /* Project object */;
 }
