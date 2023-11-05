@@ -31,6 +31,9 @@
 		BBE03D8D2AF52CC700853A50 /* WebServiceMarket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE03D8C2AF52CC600853A50 /* WebServiceMarket.swift */; };
 		BBE03D8F2AF538C200853A50 /* MarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE03D8E2AF538C200853A50 /* MarketViewModel.swift */; };
 		BBE03D912AF5417700853A50 /* MarketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE03D902AF5417700853A50 /* MarketTableViewCell.swift */; };
+		BBE03D932AF79BE300853A50 /* WebServiceNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE03D922AF79BE200853A50 /* WebServiceNews.swift */; };
+		BBE03D952AF7A4CE00853A50 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE03D942AF7A4CE00853A50 /* NewsViewModel.swift */; };
+		BBE03D972AF7C9BB00853A50 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE03D962AF7C9BB00853A50 /* NewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +58,9 @@
 		BBE03D8C2AF52CC600853A50 /* WebServiceMarket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceMarket.swift; sourceTree = "<group>"; };
 		BBE03D8E2AF538C200853A50 /* MarketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewModel.swift; sourceTree = "<group>"; };
 		BBE03D902AF5417700853A50 /* MarketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTableViewCell.swift; sourceTree = "<group>"; };
+		BBE03D922AF79BE200853A50 /* WebServiceNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceNews.swift; sourceTree = "<group>"; };
+		BBE03D942AF7A4CE00853A50 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		BBE03D962AF7C9BB00853A50 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				BBE03D7A2AF1230000853A50 /* NewsViewController.swift */,
+				BBE03D962AF7C9BB00853A50 /* NewsTableViewCell.swift */,
 				BBE03D7C2AF1231400853A50 /* CurrencyViewController.swift */,
 				BBE03D842AF1B83800853A50 /* CurrencyTableViewCell.swift */,
 				BBE03D7E2AF1232500853A50 /* CryptoViewController.swift */,
@@ -126,6 +133,7 @@
 				BBDA59E72AF1206F00249807 /* CurrencyViewModel.swift */,
 				BBE03D882AF4159600853A50 /* CryptoViewModel.swift */,
 				BBE03D8E2AF538C200853A50 /* MarketViewModel.swift */,
+				BBE03D942AF7A4CE00853A50 /* NewsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -144,6 +152,7 @@
 				BBDA59E32AF1202700249807 /* WebServiceCurrency.swift */,
 				BBE03D862AF4130600853A50 /* WebServiceCrypto.swift */,
 				BBE03D8C2AF52CC600853A50 /* WebServiceMarket.swift */,
+				BBE03D922AF79BE200853A50 /* WebServiceNews.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -230,8 +239,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBE03D7D2AF1231400853A50 /* CurrencyViewController.swift in Sources */,
+				BBE03D952AF7A4CE00853A50 /* NewsViewModel.swift in Sources */,
 				BBE03D812AF1233B00853A50 /* MarketViewController.swift in Sources */,
 				BBDA59E82AF1206F00249807 /* CurrencyViewModel.swift in Sources */,
+				BBE03D932AF79BE300853A50 /* WebServiceNews.swift in Sources */,
 				BBE03D7F2AF1232500853A50 /* CryptoViewController.swift in Sources */,
 				BBE03D8B2AF424D700853A50 /* CryptoTableViewCell.swift in Sources */,
 				BBDA59CC2AF11FA200249807 /* AppDelegate.swift in Sources */,
@@ -245,6 +256,7 @@
 				BBE03D852AF1B83800853A50 /* CurrencyTableViewCell.swift in Sources */,
 				BBDA59CE2AF11FA200249807 /* SceneDelegate.swift in Sources */,
 				BBE03D872AF4130600853A50 /* WebServiceCrypto.swift in Sources */,
+				BBE03D972AF7C9BB00853A50 /* NewsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

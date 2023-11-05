@@ -27,6 +27,7 @@ class CurrencyTableViewCell: UITableViewCell {
         didSet {
             self.labelCurrency.text = "\(item.baseCurrency):"
             self.labelValue.text = String(item.conversionRate)
+            
             let reverseValue = 1/item.conversionRate
             let roundedValue = round(reverseValue * 100)/100
             if roundedValue == 0.0 {
