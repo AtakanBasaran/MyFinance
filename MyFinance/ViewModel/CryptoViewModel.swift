@@ -12,6 +12,7 @@ import RxCocoa
 
 class FinanceCryptoViewModel {
     
+    //Publishing to ViewController with Rx library
     private var originalCryptoList: [CryptoViewModelItem] = []
     let cryptoList: BehaviorRelay<[CryptoViewModelItem]> = BehaviorRelay(value: [])
     let error: PublishSubject<String> = PublishSubject()
@@ -20,12 +21,12 @@ class FinanceCryptoViewModel {
     
     func getCrypto() {
         
-        self.loading.accept(true)
+        self.loading.accept(true) //The loading process started
         let url = URL(string: "https://api.coincap.io/v2/assets")!
         
         WebServiceCrypto().downloadCrypto(url: url) { result in
             
-            self.loading.accept(false)
+            self.loading.accept(false) //The loading process finished
             switch result {
             case .failure(let error):
                 switch error {
@@ -37,14 +38,14 @@ class FinanceCryptoViewModel {
                 
             case .success(let cryptos):
                 self.originalCryptoList = cryptos.data.map { data in
-                    return CryptoViewModelItem(symbol: data.symbol ?? "", priceUsd: data.priceUsd ?? "", changePercent24Hr: data.changePercent24Hr ?? "", volume: data.volumeUsd24Hr ?? "")
+                    return CryptoViewModelItem(symbol: data.symbol ?? "", priceUsd: data.priceUsd ?? "", changePercent24Hr: data.changePercent24Hr ?? "", volume: data.volumeUsd24Hr ?? "") //Map to wanted data to show in View
                 }
                 self.cryptoList.accept(self.originalCryptoList)
             }
         }
 
     }
-    
+    //Filtering for search button
     func filterCryptoList(with searchText: String) {
         
         if searchText.isEmpty {

@@ -12,6 +12,7 @@ import RxCocoa
 
 class FinanceMarketViewModel {
     
+    //Publishing to ViewController with Rx library
     private var originalMarketList: [MarketViewModel] = []
     let marketList: BehaviorRelay<[MarketViewModel]> = BehaviorRelay(value: [])
     let error: PublishSubject<String> = PublishSubject()
@@ -19,11 +20,11 @@ class FinanceMarketViewModel {
     
     func getMarketStocks() {
         
-        self.loading.accept(true)
+        self.loading.accept(true) //The loading process started
         let url = URL(string: "https://financialmodelingprep.com/api/v3/symbol/NASDAQ?apikey=619789890eec4bcefa46daae185c1224")!
         
         WebServiceMarket().downloadMarket(url: url) { result in
-            self.loading.accept(false)
+            self.loading.accept(false) //The loading process finished
             switch result {
             case .failure(let error):
                 switch error {
@@ -34,12 +35,13 @@ class FinanceMarketViewModel {
                 }
                 
             case .success(let stockList):
-                self.originalMarketList = stockList.map(MarketViewModel.init)
+                self.originalMarketList = stockList.map(MarketViewModel.init) //Map to wanted data to show in View
                 self.marketList.accept(self.originalMarketList)
             }
         }
     }
     
+    //Filtering for search button
     func filtering(with SearchText: String) {
         
         if SearchText.isEmpty {

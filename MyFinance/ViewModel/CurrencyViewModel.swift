@@ -11,6 +11,7 @@ import RxCocoa
 
 class FinanceCurrencyViewModel {
 
+    //Publishing to ViewController with Rx library
     let currencyList: PublishSubject<CurrencyViewModel> = PublishSubject()
     let error: PublishSubject<String> = PublishSubject()
     
@@ -18,8 +19,7 @@ class FinanceCurrencyViewModel {
     func getCurrency(selectedCurrency: String) {
         let url = URL(string: "https://v6.exchangerate-api.com/v6/4b953778eff2fa60cb639321/latest/\(selectedCurrency)")!
         
-        WebServiceCurrency().downloadCurrency(url: url) { [weak self] result in
-            guard let self = self else { return }
+        WebServiceCurrency().downloadCurrency(url: url) { result in
                         
             switch result {
             case .success(let currency):
@@ -40,7 +40,7 @@ class FinanceCurrencyViewModel {
 
 }
 
-
+//Map to wanted data to show in View
 struct CurrencyViewModel: Sequence {
     let currencyList: [CurrencyViewModelItem]
 

@@ -62,7 +62,7 @@ class CryptoViewController: UIViewController, UITableViewDelegate, UISearchBarDe
             .bind(to: refreshControl.rx.isRefreshing)
             .disposed(by: disposeBag)
         
-        searchBar.rx.text
+        searchBar.rx.text //Setting attributes for the search button
             .orEmpty
             .debounce(.milliseconds(300), scheduler: MainScheduler.instance)
             .distinctUntilChanged()

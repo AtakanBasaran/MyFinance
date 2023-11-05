@@ -11,6 +11,7 @@ import RxCocoa
 
 class NewsViewController: UIViewController, UITableViewDelegate {
     
+    @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
 
     
@@ -26,8 +27,9 @@ class NewsViewController: UIViewController, UITableViewDelegate {
         tableView.rx.setDelegate(self).disposed(by: disposeBag)
         setUpBindings()
         newsVM.getNews(selectedCategory: selectedCategory)
+        categoryLabel.text = selectedCategory.uppercased()
         
-        refreshControl.addTarget(self, action: #selector(refreshing), for: .valueChanged)
+        refreshControl.addTarget(self, action: #selector(refreshing), for: .valueChanged) //loading
         tableView.addSubview(refreshControl)
 
     }
@@ -37,8 +39,8 @@ class NewsViewController: UIViewController, UITableViewDelegate {
         tableView.reloadData()
     }
     
+    
     func setUpBindings() {
-        
         newsVM
             .error
             .observe(on: MainScheduler.asyncInstance)
@@ -62,9 +64,7 @@ class NewsViewController: UIViewController, UITableViewDelegate {
             .disposed(by: disposeBag)
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
-    }
+    
     
     
     
@@ -81,6 +81,7 @@ class NewsViewController: UIViewController, UITableViewDelegate {
             let selectedRow = pickerView.selectedRow(inComponent: 0)
             self.selectedCategory = self.categories[selectedRow]
             self.newsVM.getNews(selectedCategory: self.selectedCategory)
+            self.categoryLabel.text = self.selectedCategory.uppercased()
             self.tableView.reloadData()
         }
         alertController.addAction(doneAction)
