@@ -18,10 +18,10 @@ class FinanceNewsViewModel {
     let loading: BehaviorRelay<Bool> = BehaviorRelay(value: false)
     
         
-    func getNews(selectedCategory: String) {
+    func getNews(selectedCategory: String, selectedCountry: String) {
         
         self.loading.accept(true) //The loading process started
-        let url = URL(string: "https://newsapi.org/v2/top-headlines?country=us&category=\(selectedCategory)&apiKey=455a336215aa40d1a905569434fa2e52")!
+        let url = URL(string: "https://newsapi.org/v2/top-headlines?country=\(selectedCountry)&category=\(selectedCategory)&apiKey=455a336215aa40d1a905569434fa2e52")!
         
         WebServiceNews().downloadNews(url: url) { result in
             self.loading.accept(false) //The loading process finished
