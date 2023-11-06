@@ -28,7 +28,7 @@ class CryptoViewController: UIViewController, UITableViewDelegate, UISearchBarDe
         setUpBindings()
         cryptoVM.getCrypto()
         
-        refreshControl.addTarget(self, action: #selector(refreshing), for: .valueChanged)
+        refreshControl.addTarget(self, action: #selector(refreshing), for: .valueChanged) //loading
         tableView.addSubview(refreshControl)
 
     }

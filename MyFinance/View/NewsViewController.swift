@@ -21,6 +21,7 @@ class NewsViewController: UIViewController, UITableViewDelegate {
     let refreshControl = UIRefreshControl()
     var selectedCategory = "business"
     var selectedCountry = "US"
+    
     var activePickerView: UIPickerView?
     var countryPickerView: UIPickerView?
     var categoryPickerView: UIPickerView?
@@ -39,6 +40,7 @@ class NewsViewController: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //pickerViews initialized
         countryPickerView = UIPickerView()
         categoryPickerView = UIPickerView()
         
@@ -48,9 +50,9 @@ class NewsViewController: UIViewController, UITableViewDelegate {
         categoryPickerView?.delegate = self
         categoryPickerView?.dataSource = self
         
-        tableView.rx.setDelegate(self).disposed(by: disposeBag)
+        tableView.rx.setDelegate(self).disposed(by: disposeBag) //tableView delegate is set with rx
         setUpBindings()
-        newsVM.getNews(selectedCategory: selectedCategory, selectedCountry: selectedCountry)
+        newsVM.getNews(selectedCategory: selectedCategory, selectedCountry: selectedCountry) //initialize category and country for news
         
         categoryLabel.text = selectedCategory.uppercased()
         buttonCountry.setTitle(selectedCountry, for: .normal)
@@ -99,7 +101,7 @@ class NewsViewController: UIViewController, UITableViewDelegate {
         
         let alertController = UIAlertController(title: "Country\n\n\n\n\n\n\n\n\n", message: nil, preferredStyle: .actionSheet)
         
-        let pickerView = UIPickerView(frame: CGRect(x: 0, y: 0, width: alertController.view.bounds.width, height: 200))
+        let pickerView = UIPickerView(frame: CGRect(x: 0, y: 0, width: alertController.view.bounds.width - 16, height: 200))
         pickerView.delegate = self
         pickerView.dataSource = self
         alertController.view.addSubview(pickerView)
@@ -161,6 +163,7 @@ extension NewsViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
+        //Chosing category or country pickerViews according to buttons 
         if activePickerView == countryPickerView {
                 return countries.count
             } else if activePickerView == categoryPickerView {

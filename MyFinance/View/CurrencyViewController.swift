@@ -40,12 +40,12 @@ class CurrencyViewController: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.rx.setDelegate(self).disposed(by: disposeBag)
+        tableView.rx.setDelegate(self).disposed(by: disposeBag) //tableView delegate is set with rx
         setUpBindings()
-        currencyVM.getCurrency(selectedCurrency: "USD")
+        currencyVM.getCurrency(selectedCurrency: "USD") //Initialized currency
         labelBaseCurrency.text = "Curency: \(currency)"
         
-        refreshControl.addTarget(self, action: #selector(refreshing), for: .valueChanged)
+        refreshControl.addTarget(self, action: #selector(refreshing), for: .valueChanged) //loading
         tableView.addSubview(refreshControl)
         
     }
