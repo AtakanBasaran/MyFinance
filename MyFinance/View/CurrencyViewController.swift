@@ -16,6 +16,8 @@ class CurrencyViewController: UIViewController, UITableViewDelegate {
     
     private let currencyVM = FinanceCurrencyViewModel()
     private let disposeBag = DisposeBag()
+    let refreshControl = UIRefreshControl()
+    var currency = "USD"
     
     private var currencyNames = [
         "USD", "AED", "AFN", "ALL", "AMD", "ANG", "AOA", "ARS", "AUD", "AWG", "AZN",
@@ -41,8 +43,16 @@ class CurrencyViewController: UIViewController, UITableViewDelegate {
         tableView.rx.setDelegate(self).disposed(by: disposeBag)
         setUpBindings()
         currencyVM.getCurrency(selectedCurrency: "USD")
-        labelBaseCurrency.text = "Curency: USD"
+        labelBaseCurrency.text = "Curency: \(currency)"
         
+        refreshControl.addTarget(self, action: #selector(refreshing), for: .valueChanged)
+        tableView.addSubview(refreshControl)
+        
+    }
+    
+    @objc func refreshing() {
+        currencyVM.getCurrency(selectedCurrency: currency)
+        tableView.reloadData()
     }
     
     @IBAction func searchButton(_ sender: Any) {
@@ -56,9 +66,9 @@ class CurrencyViewController: UIViewController, UITableViewDelegate {
         
         let doneAction = UIAlertAction(title: "Select", style: .default) { _ in
             let rowSelected = pickerView.selectedRow(inComponent: 0)
-            let currency = self.currencyNames[rowSelected]
-            self.currencyVM.getCurrency(selectedCurrency: currency)
-            self.labelBaseCurrency.text = "Currency: \(currency)"
+            self.currency = self.currencyNames[rowSelected]
+            self.currencyVM.getCurrency(selectedCurrency: self.currency)
+            self.labelBaseCurrency.text = "Currency: \(self.currency)"
             self.tableView.reloadData()
         }
         alertController.addAction(doneAction)
@@ -86,6 +96,12 @@ class CurrencyViewController: UIViewController, UITableViewDelegate {
             .bind(to: tableView.rx.items(cellIdentifier: "CurrencyCell", cellType: CurrencyTableViewCell.self)) {row, item, cell in
                 cell.item = item
             }            
+            .disposed(by: disposeBag)
+        
+        currencyVM
+            .loading
+            .observe(on: MainScheduler.instance)
+            .bind(to: refreshControl.rx.isRefreshing)
             .disposed(by: disposeBag)
     }
 }

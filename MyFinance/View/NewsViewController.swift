@@ -19,7 +19,7 @@ class NewsViewController: UIViewController, UITableViewDelegate {
     let disposeBag = DisposeBag()
     let refreshControl = UIRefreshControl()
     var selectedCategory = "business"
-    private var categories = ["business","entertainment","general","health","science","sports","technology"]
+    private var categories = ["Business","Entertainment","General","Health","Science","Sports","Technology"]
 
     override func viewDidLoad() {
         super.viewDidLoad()

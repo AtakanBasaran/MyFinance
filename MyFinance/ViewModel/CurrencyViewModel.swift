@@ -14,13 +14,14 @@ class FinanceCurrencyViewModel {
     //Publishing to ViewController with Rx library
     let currencyList: PublishSubject<CurrencyViewModel> = PublishSubject()
     let error: PublishSubject<String> = PublishSubject()
-    
+    let loading: BehaviorRelay<Bool> = BehaviorRelay(value: false)
     
     func getCurrency(selectedCurrency: String) {
+        loading.accept(true)
         let url = URL(string: "https://v6.exchangerate-api.com/v6/4b953778eff2fa60cb639321/latest/\(selectedCurrency)")!
         
         WebServiceCurrency().downloadCurrency(url: url) { result in
-                        
+            self.loading.accept(false)
             switch result {
             case .success(let currency):
                 let newCurrency = CurrencyViewModel(conversionRates: currency.conversionRates)
