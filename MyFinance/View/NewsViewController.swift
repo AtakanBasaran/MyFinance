@@ -61,6 +61,8 @@ class NewsViewController: UIViewController, UITableViewDelegate {
         tableView.addSubview(refreshControl)
         
     
+        
+    
     }
     
     @objc func refreshing() {
