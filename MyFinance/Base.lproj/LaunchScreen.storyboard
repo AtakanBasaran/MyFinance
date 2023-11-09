@@ -22,7 +22,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MyFinance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7L9-SQ-ei8">
                                 <rect key="frame" x="61" y="473" width="270" height="43"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="FRX-Al-oY2"/>
+                                    <constraint firstAttribute="height" constant="43" id="4nF-Gw-g9v"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -32,13 +32,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.14117647058823529" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7L9-SQ-ei8" secondAttribute="bottom" constant="302" id="1xp-GU-ljQ"/>
-                            <constraint firstItem="WD9-9W-yr3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="SCQ-K4-mhh"/>
-                            <constraint firstItem="WD9-9W-yr3" firstAttribute="centerX" secondItem="7L9-SQ-ei8" secondAttribute="centerX" id="TqM-z4-aBC"/>
-                            <constraint firstItem="WD9-9W-yr3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="V96-fw-xUm"/>
-                            <constraint firstItem="7L9-SQ-ei8" firstAttribute="top" secondItem="WD9-9W-yr3" secondAttribute="bottom" constant="8" id="lwA-aO-RjQ"/>
-                            <constraint firstItem="WD9-9W-yr3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="230" id="xGo-mh-KyA"/>
-                            <constraint firstItem="7L9-SQ-ei8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="yhA-va-P8c"/>
+                            <constraint firstItem="7L9-SQ-ei8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="0WA-rW-dhq"/>
+                            <constraint firstItem="WD9-9W-yr3" firstAttribute="centerX" secondItem="7L9-SQ-ei8" secondAttribute="centerX" id="6QQ-L7-yT5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7L9-SQ-ei8" secondAttribute="bottom" constant="302" id="6ht-ad-Tc6"/>
+                            <constraint firstItem="WD9-9W-yr3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="230" id="Fvp-eV-O2L"/>
+                            <constraint firstItem="WD9-9W-yr3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="W9V-EE-xhR"/>
+                            <constraint firstItem="7L9-SQ-ei8" firstAttribute="top" secondItem="WD9-9W-yr3" secondAttribute="bottom" constant="8" id="f5H-Nb-sni"/>
+                            <constraint firstItem="WD9-9W-yr3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="s68-0U-KSL"/>
                         </constraints>
                     </view>
                 </viewController>
