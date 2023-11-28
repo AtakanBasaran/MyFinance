@@ -38,7 +38,7 @@ class FinanceNewsViewModel {
                 
             case .success(let news):
                 let transformedList = news.articles.map { data in
-                    return NewsViewModelItem(title: data.title, description: data.description ?? "More details coming soon...") //Map to wanted data to show in View
+                    return NewsViewModelItem(url: data.url, title: data.title, description: data.description ?? "More details coming soon...") //Map to wanted data to show in View
                 }
                 self.newsList.onNext(transformedList)
                 
@@ -51,7 +51,7 @@ class FinanceNewsViewModel {
 
 
 struct NewsViewModelItem {
-    
+    let url: String
     let title: String
     let description: String
 }

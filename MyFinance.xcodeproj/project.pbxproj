@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB4E348D2B165A4F0015F58D /* NewsWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4E348C2B165A4F0015F58D /* NewsWebViewController.swift */; };
 		BBDA59CC2AF11FA200249807 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA59CB2AF11FA200249807 /* AppDelegate.swift */; };
 		BBDA59CE2AF11FA200249807 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA59CD2AF11FA200249807 /* SceneDelegate.swift */; };
 		BBDA59D32AF11FA200249807 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBDA59D12AF11FA200249807 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB4E348C2B165A4F0015F58D /* NewsWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsWebViewController.swift; sourceTree = "<group>"; };
 		BBDA59C82AF11FA200249807 /* MyFinance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFinance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBDA59CB2AF11FA200249807 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBDA59CD2AF11FA200249807 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				BBE03D7A2AF1230000853A50 /* NewsViewController.swift */,
 				BBE03D962AF7C9BB00853A50 /* NewsTableViewCell.swift */,
+				BB4E348C2B165A4F0015F58D /* NewsWebViewController.swift */,
 				BBE03D7C2AF1231400853A50 /* CurrencyViewController.swift */,
 				BBE03D842AF1B83800853A50 /* CurrencyTableViewCell.swift */,
 				BBE03D7E2AF1232500853A50 /* CryptoViewController.swift */,
@@ -250,6 +253,7 @@
 				BBE03D892AF4159600853A50 /* CryptoViewModel.swift in Sources */,
 				BBDA59E62AF1204900249807 /* Finance.swift in Sources */,
 				BBE03D7B2AF1230000853A50 /* NewsViewController.swift in Sources */,
+				BB4E348D2B165A4F0015F58D /* NewsWebViewController.swift in Sources */,
 				BBDA59E42AF1202700249807 /* WebServiceCurrency.swift in Sources */,
 				BBE03D912AF5417700853A50 /* MarketTableViewCell.swift in Sources */,
 				BBE03D8F2AF538C200853A50 /* MarketViewModel.swift in Sources */,

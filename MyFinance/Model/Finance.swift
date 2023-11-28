@@ -52,7 +52,7 @@ struct dataCrypto: Codable {
 
 // MARK: - StockMarket
 struct StockMarket: Codable {
-    let symbol, name: String
+    let symbol, name: String?
     let price, changesPercentage, change, dayLow: Double?
     let dayHigh, yearHigh, yearLow: Double?
     let marketCap: Int

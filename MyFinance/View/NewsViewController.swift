@@ -21,10 +21,13 @@ class NewsViewController: UIViewController, UITableViewDelegate {
     let refreshControl = UIRefreshControl()
     var selectedCategory = "business"
     var selectedCountry = "US"
+    var selectedUrl = ""
     
     var activePickerView: UIPickerView?
     var countryPickerView: UIPickerView?
     var categoryPickerView: UIPickerView?
+    
+    
 
     
     
@@ -36,6 +39,11 @@ class NewsViewController: UIViewController, UITableViewDelegate {
         "NG", "NL", "NO", "NZ", "PH", "PL", "PT", "RO", "RS", "RU", "SA",
         "SE", "SG", "SI", "SK", "TH", "TR", "TW", "UA", "US", "VE", "ZA"
     ]
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,16 +91,33 @@ class NewsViewController: UIViewController, UITableViewDelegate {
         newsVM
             .newsList
             .observe(on: MainScheduler.asyncInstance)
-            .bind(to: tableView.rx.items(cellIdentifier: "NewsCell", cellType: NewsTableViewCell.self)) {row, item, cell in
-                cell.item = item
+            .bind(to: tableView.rx.items(cellIdentifier: "NewsCell", cellType: NewsTableViewCell.self)) { row, element, cell in
+                cell.item = element
             }
             .disposed(by: disposeBag)
+        
+        tableView.rx.modelSelected(NewsViewModelItem.self)
+            .subscribe(onNext: { [weak self] item in
+                guard let self = self else { return }
+                self.selectedUrl = item.url
+                self.performSegue(withIdentifier: "toWebVC", sender: nil)
+            })
+            .disposed(by: disposeBag)
+
         
         newsVM
             .loading
             .observe(on: MainScheduler.asyncInstance)
             .bind(to: refreshControl.rx.isRefreshing)
             .disposed(by: disposeBag)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toWebVC" {
+            let destinationVC = segue.destination as! NewsWebViewController
+            destinationVC.webUrl = self.selectedUrl
+        }
     }
     
  
