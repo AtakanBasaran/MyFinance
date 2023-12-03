@@ -79,7 +79,7 @@ class NewsViewController: UIViewController, UITableViewDelegate {
     }
     
     
-    func setUpBindings() {
+    func setUpBindings() { //Observing published subjects
         newsVM
             .error
             .observe(on: MainScheduler.asyncInstance)
