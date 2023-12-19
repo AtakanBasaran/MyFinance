@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BB4E348D2B165A4F0015F58D /* NewsWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4E348C2B165A4F0015F58D /* NewsWebViewController.swift */; };
+		BB8128102B324CFF008F078F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BB81280F2B324CFF008F078F /* RxSwift */; };
 		BBDA59CC2AF11FA200249807 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA59CB2AF11FA200249807 /* AppDelegate.swift */; };
 		BBDA59CE2AF11FA200249807 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA59CD2AF11FA200249807 /* SceneDelegate.swift */; };
 		BBDA59D32AF11FA200249807 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBDA59D12AF11FA200249807 /* Main.storyboard */; };
@@ -17,9 +18,7 @@
 		BBDA59E62AF1204900249807 /* Finance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA59E52AF1204900249807 /* Finance.swift */; };
 		BBDA59E82AF1206F00249807 /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA59E72AF1206F00249807 /* CurrencyViewModel.swift */; };
 		BBDA59EB2AF120AC00249807 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = BBDA59EA2AF120AC00249807 /* RxBlocking */; };
-		BBDA59ED2AF120AC00249807 /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = BBDA59EC2AF120AC00249807 /* RxBlocking-Dynamic */; };
 		BBDA59EF2AF120AC00249807 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BBDA59EE2AF120AC00249807 /* RxCocoa */; };
-		BBDA59F12AF120AC00249807 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = BBDA59F02AF120AC00249807 /* RxCocoa-Dynamic */; };
 		BBDA59F32AF120AC00249807 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = BBDA59F22AF120AC00249807 /* RxRelay */; };
 		BBE03D7B2AF1230000853A50 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE03D7A2AF1230000853A50 /* NewsViewController.swift */; };
 		BBE03D7D2AF1231400853A50 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE03D7C2AF1231400853A50 /* CurrencyViewController.swift */; };
@@ -71,21 +70,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBDA59F32AF120AC00249807 /* RxRelay in Frameworks */,
-				BBDA59F12AF120AC00249807 /* RxCocoa-Dynamic in Frameworks */,
 				BBDA59EF2AF120AC00249807 /* RxCocoa in Frameworks */,
+				BB8128102B324CFF008F078F /* RxSwift in Frameworks */,
 				BBDA59EB2AF120AC00249807 /* RxBlocking in Frameworks */,
-				BBDA59ED2AF120AC00249807 /* RxBlocking-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB81280E2B324CFF008F078F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BBDA59BF2AF11FA200249807 = {
 			isa = PBXGroup;
 			children = (
 				BBDA59CA2AF11FA200249807 /* MyFinance */,
 				BBDA59C92AF11FA200249807 /* Products */,
+				BB81280E2B324CFF008F078F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,10 +139,10 @@
 		BBDA59E02AF11FD600249807 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				BBE03D942AF7A4CE00853A50 /* NewsViewModel.swift */,
 				BBDA59E72AF1206F00249807 /* CurrencyViewModel.swift */,
 				BBE03D882AF4159600853A50 /* CryptoViewModel.swift */,
 				BBE03D8E2AF538C200853A50 /* MarketViewModel.swift */,
-				BBE03D942AF7A4CE00853A50 /* NewsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -178,10 +184,9 @@
 			name = MyFinance;
 			packageProductDependencies = (
 				BBDA59EA2AF120AC00249807 /* RxBlocking */,
-				BBDA59EC2AF120AC00249807 /* RxBlocking-Dynamic */,
 				BBDA59EE2AF120AC00249807 /* RxCocoa */,
-				BBDA59F02AF120AC00249807 /* RxCocoa-Dynamic */,
 				BBDA59F22AF120AC00249807 /* RxRelay */,
+				BB81280F2B324CFF008F078F /* RxSwift */,
 			);
 			productName = MyFinance;
 			productReference = BBDA59C82AF11FA200249807 /* MyFinance.app */;
@@ -500,25 +505,20 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BB81280F2B324CFF008F078F /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBDA59E92AF120AC00249807 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
 		BBDA59EA2AF120AC00249807 /* RxBlocking */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BBDA59E92AF120AC00249807 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxBlocking;
 		};
-		BBDA59EC2AF120AC00249807 /* RxBlocking-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BBDA59E92AF120AC00249807 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = "RxBlocking-Dynamic";
-		};
 		BBDA59EE2AF120AC00249807 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BBDA59E92AF120AC00249807 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
-		};
-		BBDA59F02AF120AC00249807 /* RxCocoa-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BBDA59E92AF120AC00249807 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = "RxCocoa-Dynamic";
 		};
 		BBDA59F22AF120AC00249807 /* RxRelay */ = {
 			isa = XCSwiftPackageProductDependency;

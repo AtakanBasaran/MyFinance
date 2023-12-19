@@ -46,9 +46,17 @@ class FinanceMarketViewModel {
         
         if SearchText.isEmpty {
             self.marketList.accept(originalMarketList)
+            
         } else {
-            let filteredList = originalMarketList.filter{$0.name!.lowercased().contains(SearchText.lowercased())}
+            let filteredList = originalMarketList.filter {
+                if let name = $0.name {
+                    return name.lowercased().contains(SearchText.lowercased())
+                } else {
+                    return false // or true, depending on your requirements
+                }
+            }
             self.marketList.accept(filteredList)
+
         }
     }
     

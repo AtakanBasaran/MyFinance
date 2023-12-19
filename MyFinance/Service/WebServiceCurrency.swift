@@ -18,7 +18,7 @@ class WebServiceCurrency {
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             
-            if let error = error {
+            if let _ = error {
                 completion(.failure(FinanceErrror.ServerError))
             } else if let data = data {
                 if let currencyList = try? JSONDecoder().decode(Currency.self, from: data) {

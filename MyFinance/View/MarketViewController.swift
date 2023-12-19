@@ -28,6 +28,9 @@ class MarketViewController: UIViewController, UITableViewDelegate, UISearchBarDe
         
         refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged) //loading
         tableView.addSubview(refreshControl)
+        
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(endEdit))
+        tableView.addGestureRecognizer(gestureRecognizer)
 
     }
     
@@ -35,6 +38,11 @@ class MarketViewController: UIViewController, UITableViewDelegate, UISearchBarDe
         marketVM.getMarketStocks()
         tableView.reloadData()
     }
+    
+    @objc func endEdit() {
+        view.endEditing(true)
+    }
+    
     
     func setUpBindings() {
         

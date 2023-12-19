@@ -55,13 +55,13 @@ struct StockMarket: Codable {
     let symbol, name: String?
     let price, changesPercentage, change, dayLow: Double?
     let dayHigh, yearHigh, yearLow: Double?
-    let marketCap: Int
+    let marketCap: Int?
     let priceAvg50, priceAvg200: Double?
     let exchange: Exchange
     let volume, avgVolume: Int?
     let welcomeOpen, previousClose, eps, pe: Double?
     let earningsAnnouncement: String?
-    let sharesOutstanding: Double
+    let sharesOutstanding: Double?
     let timestamp: Int?
 
     enum CodingKeys: String, CodingKey {

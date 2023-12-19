@@ -18,7 +18,7 @@ class WebServiceNews {
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             
-            if let error = error {
+            if let _ = error {
                 completion(.failure(newsError.ServerError))
             } else if let data = data {
                 if let newsList = try? JSONDecoder().decode(News.self, from: data) {

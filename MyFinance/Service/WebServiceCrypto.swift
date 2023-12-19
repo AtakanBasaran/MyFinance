@@ -20,7 +20,7 @@ class WebServiceCrypto {
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             
-            if let error = error {
+            if let _ = error {
                 completion(.failure(CryptoError.ServerError))
             } else if let data = data {
                 do {

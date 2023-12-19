@@ -30,8 +30,16 @@ class CryptoViewController: UIViewController, UITableViewDelegate, UISearchBarDe
         
         refreshControl.addTarget(self, action: #selector(refreshing), for: .valueChanged) //loading
         tableView.addSubview(refreshControl)
+        
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(endEdit))
+        tableView.addGestureRecognizer(gestureRecognizer)
 
     }
+    
+    @objc func endEdit() {
+        view.endEditing(true)
+    }
+    
     
     @objc func refreshing() {
         cryptoVM.getCrypto()

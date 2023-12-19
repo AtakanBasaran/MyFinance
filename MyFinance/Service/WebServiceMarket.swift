@@ -20,7 +20,7 @@ class WebServiceMarket {
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             
-            if let error = error {
+            if let _ = error {
                 completion(.failure(MarketError.ServerError))
             } else if let data = data {
                 if let marketList = try? JSONDecoder().decode([StockMarket].self, from: data) {

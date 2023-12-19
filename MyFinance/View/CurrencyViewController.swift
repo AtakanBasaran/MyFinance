@@ -48,8 +48,11 @@ class CurrencyViewController: UIViewController, UITableViewDelegate {
         refreshControl.addTarget(self, action: #selector(refreshing), for: .valueChanged) //loading
         tableView.addSubview(refreshControl)
         
+        
+        
     }
     
+  
     @objc func refreshing() {
         currencyVM.getCurrency(selectedCurrency: currency)
         tableView.reloadData()
