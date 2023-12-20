@@ -28,9 +28,6 @@ class NewsViewController: UIViewController, UITableViewDelegate {
     var categoryPickerView: UIPickerView?
     
     
-
-    
-    
     private var categories = ["Business","Entertainment","General","Health","Science","Sports","Technology"]
     private var countries = [
         "AE", "AR", "AT", "AU", "BE", "BG", "BR", "CA", "CH", "CN",
@@ -118,6 +115,10 @@ class NewsViewController: UIViewController, UITableViewDelegate {
             let destinationVC = segue.destination as! NewsWebViewController
             destinationVC.webUrl = self.selectedUrl
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
  
