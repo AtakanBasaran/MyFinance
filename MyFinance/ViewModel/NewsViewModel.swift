@@ -36,7 +36,8 @@ class FinanceNewsViewModel {
                     self.error.onNext("Server Error")
                 }
                 
-            case .success(let news):
+            case .success(var news):
+                news.articles.removeAll {$0.title == "[Removed]"}
                 let transformedList = news.articles.map { data in
                     return NewsViewModelItem(url: data.url, title: data.title, description: data.description ?? "More details coming soon...") //Map to wanted data to show in View
                 }

@@ -49,9 +49,17 @@ class CryptoTableViewCell: UITableViewCell {
                 self.changeLabel.text = "+\(roundedNewValue)%"
             }
  
-            let volumeValue = Double(item.volume)!
-            let intVolume = Int(volumeValue)
-            self.volumeLabel.text = "Volume: $\(intVolume)"
+            let volumeValue = Double(item.volume) ?? 0.0  // Ensure volumeValue is not nil
+            let numberFormatter = NumberFormatter()
+            numberFormatter.numberStyle = .decimal
+            numberFormatter.maximumFractionDigits = 0
+
+            if let formattedVolume = numberFormatter.string(from: NSNumber(value: volumeValue)) {
+                self.volumeLabel.text = "Volume: $\(formattedVolume)"
+            } else {
+                self.volumeLabel.text = "Volume: $\(volumeValue)"
+            }
+
             
             
             

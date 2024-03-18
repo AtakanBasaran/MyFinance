@@ -21,7 +21,7 @@ class WebServiceNews {
             if let _ = error {
                 completion(.failure(newsError.ServerError))
             } else if let data = data {
-                if let newsList = try? JSONDecoder().decode(News.self, from: data) {
+                if var newsList = try? JSONDecoder().decode(News.self, from: data) {
                     completion(.success(newsList))
                 } else {
                     completion(.failure(newsError.ParseError))

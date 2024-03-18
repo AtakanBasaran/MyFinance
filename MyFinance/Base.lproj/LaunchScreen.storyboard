@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,29 +16,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="finance" translatesAutoresizingMaskIntoConstraints="NO" id="WD9-9W-yr3">
-                                <rect key="frame" x="108" y="289" width="176" height="176"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MyFinance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7L9-SQ-ei8">
                                 <rect key="frame" x="61" y="473" width="270" height="43"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="4nF-Gw-g9v"/>
+                                    <constraint firstAttribute="height" constant="43" id="Hhw-7V-iR2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="finance" translatesAutoresizingMaskIntoConstraints="NO" id="8E0-40-Feb">
+                                <rect key="frame" x="76" y="326" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.14117647058823529" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7L9-SQ-ei8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="0WA-rW-dhq"/>
-                            <constraint firstItem="WD9-9W-yr3" firstAttribute="centerX" secondItem="7L9-SQ-ei8" secondAttribute="centerX" id="6QQ-L7-yT5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7L9-SQ-ei8" secondAttribute="bottom" constant="302" id="6ht-ad-Tc6"/>
-                            <constraint firstItem="WD9-9W-yr3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="230" id="Fvp-eV-O2L"/>
-                            <constraint firstItem="WD9-9W-yr3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="W9V-EE-xhR"/>
-                            <constraint firstItem="7L9-SQ-ei8" firstAttribute="top" secondItem="WD9-9W-yr3" secondAttribute="bottom" constant="8" id="f5H-Nb-sni"/>
-                            <constraint firstItem="WD9-9W-yr3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="s68-0U-KSL"/>
+                            <constraint firstItem="7L9-SQ-ei8" firstAttribute="top" secondItem="8E0-40-Feb" secondAttribute="bottom" constant="19" id="Isa-gK-9Qa"/>
+                            <constraint firstItem="7L9-SQ-ei8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="RRQ-4f-CcF"/>
+                            <constraint firstItem="8E0-40-Feb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UAf-0g-rXf"/>
+                            <constraint firstItem="8E0-40-Feb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="eKF-us-XMv"/>
+                            <constraint firstItem="8E0-40-Feb" firstAttribute="centerX" secondItem="7L9-SQ-ei8" secondAttribute="centerX" id="hoW-dW-lM0"/>
+                            <constraint firstItem="8E0-40-Feb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="267" id="n0G-b0-3yw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7L9-SQ-ei8" secondAttribute="bottom" constant="302" id="pYp-YC-efx"/>
                         </constraints>
                     </view>
                 </viewController>

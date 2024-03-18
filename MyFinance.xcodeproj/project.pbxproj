@@ -139,10 +139,10 @@
 		BBDA59E02AF11FD600249807 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				BBE03D942AF7A4CE00853A50 /* NewsViewModel.swift */,
 				BBDA59E72AF1206F00249807 /* CurrencyViewModel.swift */,
 				BBE03D882AF4159600853A50 /* CryptoViewModel.swift */,
 				BBE03D8E2AF538C200853A50 /* MarketViewModel.swift */,
+				BBE03D942AF7A4CE00853A50 /* NewsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";

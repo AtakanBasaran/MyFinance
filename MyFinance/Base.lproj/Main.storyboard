@@ -156,16 +156,16 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="117" id="Hcy-9X-Rhb"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbi-Yf-fgO">
-                                                    <rect key="frame" x="322" y="23" width="92" height="28"/>
+                                                    <rect key="frame" x="322" y="23" width="71" height="28"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="92" id="13U-eQ-ZPh"/>
+                                                        <constraint firstAttribute="width" constant="71" id="13U-eQ-ZPh"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -175,7 +175,7 @@
                                                         <constraint firstAttribute="height" constant="18" id="g6S-a1-M79"/>
                                                         <constraint firstAttribute="width" constant="165" id="qhV-hE-4MI"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -195,7 +195,7 @@
                                                 <constraint firstItem="km1-zH-pCV" firstAttribute="top" secondItem="ofP-Y0-sKQ" secondAttribute="topMargin" constant="17" id="CbF-9S-DuC"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="INe-CI-EjS" secondAttribute="bottom" constant="2" id="JX1-hC-2Ee"/>
                                                 <constraint firstItem="nmg-zL-yBE" firstAttribute="top" secondItem="ofP-Y0-sKQ" secondAttribute="topMargin" id="N3I-GD-hM6"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Wbi-Yf-fgO" secondAttribute="trailing" constant="-41" id="XbN-54-RhS"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Wbi-Yf-fgO" secondAttribute="trailing" constant="-20" id="XbN-54-RhS"/>
                                                 <constraint firstItem="Wbi-Yf-fgO" firstAttribute="top" secondItem="ofP-Y0-sKQ" secondAttribute="topMargin" constant="12" id="fZH-BA-Lyo"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="km1-zH-pCV" secondAttribute="trailing" constant="46" id="h4e-LO-a3z"/>
                                                 <constraint firstItem="INe-CI-EjS" firstAttribute="top" secondItem="nmg-zL-yBE" secondAttribute="bottom" constant="3" id="mxD-nu-F0w"/>
@@ -378,17 +378,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3c-zw-Y1D">
-                                                    <rect key="frame" x="16" y="0.0" width="353" height="106"/>
+                                                    <rect key="frame" x="16" y="0.0" width="347" height="106"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="353" id="YAZ-Kf-fEF"/>
+                                                        <constraint firstAttribute="width" constant="347" id="YAZ-Kf-fEF"/>
                                                         <constraint firstAttribute="height" constant="106" id="hjz-aA-AvS"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" name="AccentColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmX-kA-ty5">
-                                                    <rect key="frame" x="16" y="114" width="339" height="122"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmX-kA-ty5">
+                                                    <rect key="frame" x="16" y="114" width="347" height="122"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -548,13 +548,13 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

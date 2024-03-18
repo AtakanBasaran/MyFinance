@@ -27,7 +27,6 @@ class NewsWebViewController: UIViewController, WKUIDelegate {
             let myRequest = URLRequest(url: url)
             webView.load(myRequest)
         }
-        
 
     }
     
